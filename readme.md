@@ -8,6 +8,11 @@ Please find more info about each part in the relevant Readme file ([frontend](fr
 
 When implementing a new feature or fixing a bug, please create a new pull request against `main` from a feature/bug branch and add `@vanessa-cooper` as reviewer.
 
-## First setup
+## How to run locally?
 
-**[TODO 05/01/2018 @vanessa-cooper]:** _It's been a while since anyone ran a fresh copy of this repo. I think it's worth documenting the steps needed to install and run the repo on a new machine?_
+1. Fork the repo and clone it in your local system
+2. [Install the Docker](https://docs.docker.com/get-docker/)
+3. [Install the Docker Compose](https://docs.docker.com/compose/install/)
+4. Verify docker is ready by running `docker -v` and `docker-compose -v` in your terminal
+5. Run `docker-compose up` from the root directory
+6. **CONGO**, With this you have done setting up the environment locally.
