@@ -9,6 +9,7 @@ import {
   ITEM_PAGE_UNLOADED,
 } from "../../constants/actionTypes";
 
+
 const mapStateToProps = (state) => ({
   ...state.item,
   currentUser: state.common.currentUser,
@@ -37,7 +38,7 @@ class Item extends React.Component {
     if (!this.props.item) {
       return null;
     }
-
+    
     const markup = {
       __html: marked(this.props.item.description, { sanitize: true }),
     };
