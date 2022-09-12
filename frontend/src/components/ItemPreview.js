@@ -31,7 +31,7 @@ const ItemPreview = (props) => {
   };
 
   let propsImage = item.image
-  console.log(typeof propsImage)   
+    
   if (propsImage === "") {
     propsImage=placeholder
   }
