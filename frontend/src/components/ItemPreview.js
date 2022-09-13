@@ -30,10 +30,10 @@ const ItemPreview = (props) => {
     }
   };
 
-  let propsImage = item.image
-    
+  let propsImage = item.image;
+
   if (propsImage === "") {
-    propsImage=placeholder
+    propsImage = placeholder;
   }
 
   return (
