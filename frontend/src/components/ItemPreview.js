@@ -30,10 +30,10 @@ const ItemPreview = (props) => {
     }
   };
 
-  let propsImage = item.image;
+  let propsplaceholderImage = item.image;
 
-  if (propsImage === "") {
-    propsImage = placeholder;
+  if (propsplaceholderImage === "") {
+    propsplaceholderImage = placeholder;
   }
 
   return (
@@ -43,7 +43,7 @@ const ItemPreview = (props) => {
     >
       <img
         alt="item"
-        src={propsImage}
+        src={propsplaceholderImage}
         className="card-img-top item-img"
         style={{ borderRadius: "20px" }}
       />
