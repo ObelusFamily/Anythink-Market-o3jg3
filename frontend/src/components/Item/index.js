@@ -8,6 +8,7 @@ import {
   ITEM_PAGE_LOADED,
   ITEM_PAGE_UNLOADED,
 } from "../../constants/actionTypes";
+import placeholder from "../../imgs/placeholder.png";
 
 const mapStateToProps = (state) => ({
   ...state.item,
@@ -36,6 +37,10 @@ class Item extends React.Component {
   render() {
     if (!this.props.item) {
       return null;
+    }
+
+    if (this.props.item.image === "") {
+      this.props.item.image = placeholder;
     }
 
     const markup = {
